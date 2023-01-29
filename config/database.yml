@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: RentUrTechBackend_production
   username: RentUrTechBackend
   password: <%= ENV["RENTURTECHBACKEND_DATABASE_PASSWORD"] %>
