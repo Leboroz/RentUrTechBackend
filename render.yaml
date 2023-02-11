@@ -1,8 +1,8 @@
 databases:
-  - name: rent_ur_tech
-    databaseName: rent_ur_tech
+  - name: rails_budget_app
+    databaseName: rails_budget_app
+    user: rails_budget_app
     plan: free
-    user: rent_ur_tech
 
 services:
   - type: web
@@ -14,7 +14,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: rent_ur_tech
+          name: rails_budget_app
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
